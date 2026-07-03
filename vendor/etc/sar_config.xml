@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <project_config name="project_config">
+    <!-- control start service, true is open sar service, false is not open sar service  -->
+    <sar_service_state key="sar_service_state" value="true" />
+    <!-- 高通平台这里value配置true，mtk自己已近实现了，这里配置false -->
+    <need_wifi_sar key="need_wifi_sar" value="true" />
+    <sensor_num key="sensor_num" value="2" />
+    <is_wifi_only key="is_wifi_only" value="false" />
+  </project_config>
+
+  <dsi_keys name="dsi_keys">
+    <dsi_param value="sensor_state"/>
+    <dsi_param value="net_state"/>
+  </dsi_keys>
+
+  <dsi_value name="dsi_value">
+    <!--根据不同的状态，获取dsi值-->
+    <dsi sensor_state="1" net_state="1" value="1"/>
+    <dsi sensor_state="1" net_state="2" value="2"/>
+    <dsi sensor_state="2" net_state="2" value="2"/>
+    <dsi sensor_state="3" net_state="3" value="3"/>
+  </dsi_value>
+
+   <wifi_keys name="wifi_keys">
+    <wifi_param value="sensor_state"/>
+    <wifi_param value="net_state"/>
+  </wifi_keys>
+
+  <wifi_value nanme="wifi_value">
+     <!-- wifi 的value值-->
+    <wifivalue sensor_state="1" net_state="1" dsi="2"/>
+    <wifivalue sensor_state="1" net_state="2" dsi="3"/>
+    <wifivalue sensor_state="2" net_state="2" dsi="3"/>
+    <wifivalue sensor_state="3" net_state="3" dsi="4"/>
+  </wifi_value>
+
+</parameter>
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<parameter>
+  <item name="Config">
+    <!--value = 0x80000 + 7001-->
+    <param key="QCRIL_OEM_HOOK_REQID" value="544289"/>
+    <param key="SupportSingleSIM"    value="true"/>
+    <param key="Supportmodem"    value="false"/>
+    <param key="SupportFM"    value="false"/>
+    <param key="SupportNormal"    value="true"/>
+    <param key="SupportPD"    value="true"/>
+    <param key="SupportUSFID"    value="true"/>
+    <param key="SupportFLASHLIGHT"    value="true"/>
+    <param key="SupportDualSar"    value="true"/>
+    <param key="SupportLightSensor"    value="true"/>
+    <param key="SupportEsim"    value="false"/>
+    <param key="UseDefaultSarSensorTool"    value="false"/>
+    <param key="SupportPowerKey" value="true"/>
+    <param key="SupportPenTest" value="true"/>
+  </item>
+  <item name="LightSensor">
+    <param key="BackLightFile" value="/sys/class/backlight/panel0-backlight/brightness"/>
+  </item>
+  <item name="Camera">
+    <param key="TwinCameraType" value="switch"/>
+  </item>
+  <item name="Charge">
+    <param key="SupportCurrent" value="false"/>
+    <param key="SupportFastCharge" value="false"/>
+    <param key="BatteryIdPath" value="/sys/class/qcom-battery/battery_id"/>
+    <param key="BatteryInfo" value="true"/>
+    <param key="SupportPDChargeType" value="PD_PPS"/>
+  </item>
+  <item name="Config">
+    <param key="ConnectorType" value="Type-C"/>
+    <param key="OtgIdVendor" value="/sys/bus/usb/drivers/usb/2-1/idVendor"/>
+    <param key="OtgIdProduct" value="/sys/bus/usb/drivers/usb/2-1/idProduct"/>
+    <param key="OtgVersion" value="/sys/bus/usb/drivers/usb/2-1/version"/>
+    <param key="TP_60HZ_Path" value="service call SurfaceFlinger 31117 i32 60"/>
+  </item>
+  <item name="SecretCode">
+    <param key="WifiLogVer" value="V2"/>
+    <param key ="DiagMode" value="diag,adb"/>
+  </item>
+  <item name="LED">
+    <param key="hasBacklight" value="true"/>
+    <param key="hasWhiteLED" value="false"/>
+    <param key="hasRedLED" value="false"/>
+    <param key="hasGreenLED" value="false"/>
+    <param key="hasBlueLED" value="false"/>
+    <param key="hasBackTorch" value="true"/>
+    <param key="hasBackTorch2" value="false"/>
+    <param key="hasFrontTorch1" value="false"/>
+    <param key="hasBackTorch1_2" value="false"/>
+    <param key="hasKeyLED" value="false"/>
+    <param key="BackTorchFileOn" value="145,/sys/class/leds/led:torch_0/brightness;1,/sys/class/leds/led:switch_0/brightness"/>
+    <param key="BackTorchFileOff" value="0,/sys/class/leds/led:switch_0/brightness;145,/sys/class/leds/led:torch_0/brightness"/>
+  </item>
+  <item name="SAR_SENSOR">
+    <param key="SarFactoryEnable" value="false"/>
+  </item>
+  <item name="SoftVersion">
+    <param key="ShowIFAA" value="true"/>
+    <param key="ShowFIDO" value="false"/>
+    <param key="ShowWidevine" value="true"/>
+    <param key="ShowKeybox" value="true"/>
+    <param key="isShowPaInformation" value="true"/>
+    <param key="PaInformationFile" value="/sys/android_audio/audio_pa"/>
+    <param key="isLockDownPath"  value="/sys/android_lcd/lockdown_info"/>
+  </item>
+  <item name="AutoTest">
+    <param key="memoryInfo" value="false"/>
+    <param key="unsupport_items" value="TEST_PHONECALL, TEST_FRONTFLASH, TEST_WIRELESS_CHARGER, TEST_BOTTOMSPEAKER, TEST_TOPSPEAKER,TEST_EARPIECE_AUDIO, TEST_AUX_MIC_TO_EARPIECE, TEST_BACKMIC_TO_EARPIECE, TEST_TOPMIC_TO_EARPIECE, TEST_MAINMIC_TO_EARPIECE, TEST_LOUDSPEAKERPACALIBRATION, TEST_MODEMHARDWARE, TEST_CAMERAHARDWARE, DACA_CAMOTP, TEST_CAMERACALFLAG, TEST_REARSUBCAMERA, TEST_FINGERPRINT, TEST_PROXIMITYSENSOR, TEST_VIBRATION"/>
+  </item>
+  <item name="SarsensorDiff">
+    <param key="sar1_ant3_diff_low" value="1900"/>
+    <param key="sar1_ant3_diff_high" value="2900"/>
+    <param key="sar1_ant2_diff_low" value="1500"/>
+    <param key="sar1_ant2_diff_high" value="2500"/>
+    <param key="sar1_ant0_diff_low" value="1850"/>
+    <param key="sar1_ant0_diff_high" value="2850"/>
+    <param key="sar1_ant3_near_status_value_comparation" value="1000"/>
+    <param key="sar1_ant3_far_status_value_comparation" value="300"/>
+    <param key="sar1_ant2_near_status_value_comparation" value="1000"/>
+    <param key="sar1_ant2_far_status_value_comparation" value="300"/>
+    <param key="sar1_ant0_near_status_value_comparation" value="1000"/>
+    <param key="sar1_ant0_far_status_value_comparation" value="300"/>
+    <param key="sar1_ant3_cap_max" value="94"/>
+    <param key="sar1_ant3_cap_min" value="64"/>
+    <param key="sar1_ant3_base_cap_max" value="47"/>
+    <param key="sar1_ant3_base_cap_min" value="17"/>
+    <param key="sar1_ant2_cap_max" value="99"/>
+    <param key="sar1_ant2_cap_min" value="69"/>
+    <param key="sar1_ant2_base_cap_max" value="49"/>
+    <param key="sar1_ant2_base_cap_min" value="19"/>
+    <param key="sar1_ant0_cap_max" value="174"/>
+    <param key="sar1_ant0_cap_min" value="144"/>
+
+    <param key="sar2_ant1_diff_low" value="1100"/>
+    <param key="sar2_ant1_diff_high" value="2100"/>
+    <param key="sar2_ant6_diff_low" value="650"/>
+    <param key="sar2_ant6_diff_high" value="1650"/>
+    <param key="sar2_ant7_diff_low" value="800"/>
+    <param key="sar2_ant7_diff_high" value="1800"/>
+    <param key="sar2_ant1_near_status_value_comparation" value="800"/>
+    <param key="sar2_ant1_far_status_value_comparation" value="300"/>
+    <param key="sar2_ant6_near_status_value_comparation" value="400"/>
+    <param key="sar2_ant6_far_status_value_comparation" value="300"/>
+    <param key="sar2_ant7_near_status_value_comparation" value="500"/>
+    <param key="sar2_ant7_far_status_value_comparation" value="300"/>
+    <param key="sar2_ant6_cap_max" value="46"/>
+    <param key="sar2_ant6_cap_min" value="16"/>
+    <param key="sar2_ant1_cap_max" value="90"/>
+    <param key="sar2_ant1_cap_min" value="60"/>
+    <param key="sar2_ant7_cap_max" value="83"/>
+    <param key="sar2_ant7_cap_min" value="53"/>
+    <param key="sar2_ant7_base_cap_max" value="46"/>
+    <param key="sar2_ant7_base_cap_min" value="16"/>
+
+    <param key="testTimeInterval" value="3000"/>
+
+    <param key="acc_min_rate_value" value="0.4"/>
+    <param key="acc_max_rate_value" value="0.8"/>
+
+    <param key="isSupportSarSensorTool" value="true"/>
+
+  </item>
+  <item name="CPRamdump">
+    <param key="Cp_Ramdump" value="true"/>
+  </item>
+
+<item name="SarNV">
+    <!--<param key="Test_Path"   value="/mnt/vendor/persist/rfs/msm/mpss/sarnv"/>-->
+    <param key="Test_Path"   value="/mnt/vendor/persist/rfs/msm/mpss"/>
+    <param key="Target_Path2" value="/vendor/rfs/msm/mpss/readonly/firmware/image/modem_pr/sarnv"/>
+    <param key="cmd" value="LctReadWriteNV rfset 4B000400"/>
+    <param key="compare1" value="00029619"/>
+    <param key="compare2" value="00030007"/>
+    <param key="Target_Path1" value="/sdcard/sarnv"/>
+  </item>
+</parameter>

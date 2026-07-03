@@ -1,0 +1,55 @@
+{
+  "config": {
+    "hw_platform": ["QRD"],
+    "soc_id": ["537", "583", "613", "631", "633", "634", "638"],
+    "ro.boot.hwname": ["dizi"]
+  },
+  "sar_algo": {
+    "owner": "sar_algo",
+    ".sar_config":{
+      "owner": "sar_algo",
+        "use_step": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "step_limit": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar2_threhold_cs0_min": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar2_threhold_cs0_max": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar2_threhold_cs3_min": {
+          "ver": "0", "type": "flt", "data": "150"
+        },
+        "sar2_threhold_cs3_max": {
+          "ver": "0", "type": "flt", "data": "210"
+        },
+        "sar2_threhold_cs6_min": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar2_threhold_cs6_max": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar1_threhold_cs0_min": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar1_threhold_cs0_max": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar1_threhold_cs3_min": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar1_threhold_cs3_max": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar1_threhold_cs6_min": {
+          "ver": "0", "type": "flt", "data": "0"
+        },
+        "sar1_threhold_cs6_max": {
+          "ver": "0", "type": "flt", "data": "0"
+        }
+    }
+  }
+}

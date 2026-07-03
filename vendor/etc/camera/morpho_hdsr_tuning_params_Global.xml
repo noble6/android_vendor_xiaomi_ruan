@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho HDSR Parameters Configuration -->
+<!-- Copyright(c) 2020 Morpho China,Inc.  -->
+
+<hdsr>
+    <version   type="string" length="1">v1.0.3_general_20230831</version>
+    <camera_id type="int"    length="1">0</camera_id>
+    
+    <params>
+        <zoom_ratio value="999">
+            <iso value="99999">
+                <super_resolution_array>
+                    <super_resolution id="0">
+                        <light_enable             type="int"     rang="[0,1]"      default="0"      length="1">1</light_enable>
+                        <fast_enable              type="int"     rang="[0,1]"       default="0"     length="1">1</fast_enable>
+						  <y_lf_nr_mode             type="int"     rang="[0,1]"       default="0"     length="1">0</y_lf_nr_mode>
+                        <cross_enable             type="int"     rang="[0,1]"       default="0"     length="1">0</cross_enable>
+                        <c_hf_nr_enable           type="int"     rang="[0,1]"      default="0"      length="1">0</c_hf_nr_enable>
+                        <deghost_level            type="double"  rang="[0.0,5.0]"   default="1.0"   length="1">0.05</deghost_level>
+                        <deghost_level_face       type="double"  rang="[0.0,5.0]"   default="1.0"   length="1">0.05</deghost_level_face>
+                        <deghost_weight_face      type="int"     rang="[0,255]"     default="0"     length="1">220</deghost_weight_face>
+                        <ghost_ratio_thres        type="double"  rang="[0.0,128.0]" default="18"    length="1">58.0</ghost_ratio_thres>
+                        <ghost_ratio_thres_face   type="double"  rang="[0.0,128.0]" default="18"    length="1">18.0</ghost_ratio_thres_face>
+                        <ghost_nr_level           type="double"  rang="[0.0,5.0]"   default="1.5"   length="1">1.0</ghost_nr_level>
+                        <y_nr_level               type="double"  rang="[0.0,50.0]"  default="0"     length="1">2.0</y_nr_level>
+                        <y_nr_mode                type="int"     rang="[0,3]"       default="0"     length="1">2</y_nr_mode>
+                        <y_nr_times               type="int"     rang="[0,3]"       default="0"     length="1">1</y_nr_times>
+                        <y_lf_nr_level            type="double"  rang="[0,-]"       default="0"     length="1">0.6</y_lf_nr_level>
+                        <y_hf_nr_level            type="double"  rang="[0,-]"       default="0"     length="1">2.0</y_hf_nr_level>
+                        <y_edge_nr_level          type="double"  rang="[0.0,10.0]"  default="0"     length="1">0.0</y_edge_nr_level>
+                        <dark_nr_level            type="double"  rang="[0.0,16.0]"  default="1.0"   length="1">1.0</dark_nr_level>
+                        <y_input_nr_level         type="double"  rang="[0.0,10.0]"  default="0"     length="1">0.0</y_input_nr_level>
+                        <c_nr_level               type="double"  rang="[0.0,16.0]"  default="0"     length="1">2.0</c_nr_level>
+                        <c_nr_times               type="int"     rang="[0,3]"       default="0"     length="1">1</c_nr_times>
+                        <c_nr_mode                type="int"     rang="[0,3]"       default="0"     length="1">1</c_nr_mode>
+                        <c_lf_nr_level            type="int"     rang="[0,41]"      default="0"     length="1">9</c_lf_nr_level>
+                        <unsharp_level            type="int"     rang="[0,-]"       default="0"     length="1">1000</unsharp_level>
+                        <unsharp_range_low        type="double"  rang="[0.0,10.0]"  default="0.1"   length="1">0.6</unsharp_range_low>
+                        <unsharp_range_high       type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">1.0</unsharp_range_high>
+                        <unsharp_nr_level         type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+                        <unsharp_mode             type="int"     rang="[0,3]"       default="3"     length="1">3</unsharp_mode>
+                        <structure_level          type="int"     rang="[0, 3000]"   default="0"     length="1">0</structure_level>
+                        <deblur_level             type="double"  rang="[0.0,3.0]"   default="0"     length="1">0.0</deblur_level>
+                        <deblur_scale             type="double"  rang="[0.0,3.0]"   default="1.0"   length="1">2.2</deblur_scale>
+                        <hfe_level                type="int"     rang="[0,128]"     default="0"     length="1">32</hfe_level>
+                        <lce_level                type="int"     rang="[1,1000]"    default="0"     length="1">0</lce_level>
+                        <lce_lf                   type="double"  rang="[1.0,-]"     default="500.0" length="1">500</lce_lf>
+                        <lce_hf                   type="double"  rang="[1.0,-]"     default="0"     length="1">30</lce_hf>
+                        <white_edge_level         type="double"  rang="[0.3,1.0]"   default="1.0"   length="1">0.3</white_edge_level>
+                        <grain_adder              type="double"  rang="[0.0,20.0]"  default="0"     length="1">5.0</grain_adder>
+                        <adrc_enable              type="int" 	 rang="[0,1]"  	    default="0"     length="1">0</adrc_enable>
+                        <hfe_black_level          type="int"     rang="[-64,0]"     default="-64"   length="1">-64</hfe_black_level>
+                        <hfe_white_level          type="int"     rang="[0,64]"      default="64"    length="1">24</hfe_white_level>
+                        <face_nr_level            type="double"  rang="[0.0,1.0]"   default="0.0"   length="1">0.2</face_nr_level>
+						  <hfe_thr                  type="int"     rang="[0,128]"     default="128"     length="1">64</hfe_thr>
+						  <y_edge_nr_radius         type="int"     rang="[3,11]"      default="3"     length="1">9</y_edge_nr_radius>
+						  
+                    </super_resolution>
+                </super_resolution_array>
+            </iso>
+        </zoom_ratio>
+        <super_zoom_ratio value="999">
+            <iso value="99999">
+                <super_resolution_array>
+                    <super_resolution id="0">
+                        <light_enable             type="int"  rang="[0,1]"          default="0"     length="1">1</light_enable>
+                        <fast_enable              type="int"     rang="[0,1]"       default="0"     length="1">1</fast_enable>
+						  <y_lf_nr_mode             type="int"     rang="[0,1]"       default="0"     length="1">0</y_lf_nr_mode>
+                        <cross_enable             type="int"     rang="[0,1]"       default="0"     length="1">0</cross_enable>
+                        <c_hf_nr_enable           type="int"  rang="[0,1]"          default="0"     length="1">0</c_hf_nr_enable>
+                        <deghost_level            type="double"  rang="[0.0,5.0]"   default="1.0"   length="1">0.05</deghost_level>
+                        <deghost_level_face       type="double"  rang="[0.0,5.0]"   default="1.0"   length="1">0.05</deghost_level_face>
+                        <deghost_weight_face      type="int"     rang="[0,255]"     default="0"     length="1">220</deghost_weight_face>
+                        <ghost_ratio_thres        type="double"  rang="[0.0,128.0]" default="18"    length="1">58.0</ghost_ratio_thres>
+                        <ghost_ratio_thres_face   type="double"  rang="[0.0,128.0]" default="18"    length="1">18.0</ghost_ratio_thres_face>
+                        <ghost_nr_level           type="double"  rang="[0.0,5.0]"   default="1.5"   length="1">1.0</ghost_nr_level>
+                        <y_nr_level               type="double"  rang="[0.0,50.0]"  default="0"     length="1">2.0</y_nr_level>
+                        <y_nr_mode                type="int"     rang="[0,3]"       default="0"     length="1">2</y_nr_mode>
+                        <y_nr_times               type="int"     rang="[0,3]"       default="0"     length="1">1</y_nr_times>
+                        <y_lf_nr_level            type="double"  rang="[0,-]"       default="0"     length="1">0.6</y_lf_nr_level>
+                        <y_hf_nr_level            type="double"  rang="[0,-]"       default="0"     length="1">2.0</y_hf_nr_level>
+                        <y_edge_nr_level          type="double"  rang="[0.0,10.0]"  default="0"     length="1">0.0</y_edge_nr_level>
+                        <dark_nr_level            type="double"  rang="[0.0,16.0]"  default="1.0"   length="1">6.0</dark_nr_level>
+                        <y_input_nr_level         type="double"  rang="[0.0,10.0]"  default="0"     length="1">0.0</y_input_nr_level>
+                        <c_nr_level               type="double"  rang="[0.0,16.0]"  default="0"     length="1">2.0</c_nr_level>
+                        <c_nr_times               type="int"     rang="[0,3]"       default="0"     length="1">1</c_nr_times>
+                        <c_nr_mode                type="int"     rang="[0,3]"       default="0"     length="1">1</c_nr_mode>
+                        <c_lf_nr_level            type="int"     rang="[0,41]"      default="0"     length="1">9</c_lf_nr_level>
+                        <unsharp_level            type="int"     rang="[0,-]"       default="0"     length="1">1000</unsharp_level>
+                        <unsharp_range_low        type="double"  rang="[0.0,10.0]"  default="0.1"   length="1">0.6</unsharp_range_low>
+                        <unsharp_range_high       type="double"  rang="[0.0,10.0]"  default="1.0"   length="1">1.0</unsharp_range_high>
+                        <unsharp_nr_level         type="double"  rang="[0.0,16.0]"  default="0"     length="1">0.0</unsharp_nr_level>
+                        <unsharp_mode             type="int"     rang="[0,3]"       default="3"     length="1">3</unsharp_mode>
+                        <structure_level          type="int"     rang="[0, 3000]"   default="0"     length="1">0</structure_level>
+                        <deblur_level             type="double"  rang="[0.0,3.0]"   default="0"     length="1">0.0</deblur_level>
+                        <deblur_scale             type="double"  rang="[0.0,3.0]"   default="1.0"   length="1">2.2</deblur_scale>
+                        <hfe_level                type="int"     rang="[0,128]"     default="0"     length="1">32</hfe_level>
+                        <lce_level                type="int"     rang="[1,1000]"    default="0"     length="1">0</lce_level>
+                        <lce_lf                   type="double"  rang="[1.0,-]"     default="500.0" length="1">500</lce_lf>
+                        <lce_hf                   type="double"  rang="[1.0,-]"     default="0"     length="1">30</lce_hf>
+                        <white_edge_level         type="double"  rang="[0.3,1.0]"   default="1.0"   length="1">0.3</white_edge_level>
+                        <grain_adder              type="double"  rang="[0.0,20.0]"  default="0"     length="1">5.0</grain_adder>
+                        <adrc_enable              type="int" 	 rang="[0,1]"  	    default="0"     length="1">0</adrc_enable>
+                        <hfe_black_level          type="int"     rang="[-64,0]"     default="-64"   length="1">-64</hfe_black_level>
+                        <hfe_white_level          type="int"     rang="[0,64]"      default="64"    length="1">24</hfe_white_level>
+                        <face_nr_level            type="double"  rang="[0.0,1.0]"   default="0.0"   length="1">0.2</face_nr_level>
+						  <hfe_thr                  type="int"     rang="[0,128]"     default="128"     length="1">32</hfe_thr>
+						  <y_edge_nr_radius         type="int"     rang="[3,11]"      default="3"     length="1">4</y_edge_nr_radius>
+                    </super_resolution>
+                </super_resolution_array>
+            </iso>
+        </super_zoom_ratio>
+    </params>
+</hdsr>

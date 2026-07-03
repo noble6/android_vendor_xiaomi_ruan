@@ -1,0 +1,63 @@
+{
+    "PipelineName": "SatSnapshot",
+    "NodesList": {
+      "Node": [
+        {
+          "NodeName": "com.xiaomi.plugin.morphohdsr",
+          "NodeInstance":"HDSRInstance"
+        },
+        {
+          "NodeName": "com.xiaomi.plugin.morphohdr",
+          "NodeInstance":"HDRInstance"
+        },
+        {
+        "NodeName": "com.xiaomi.plugin.skinbeautifier",
+        "NodeInstance":"SkinInstance"
+        }
+      ]
+    },
+    "PortLinkages": {
+      "Link": [
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SourceBuffer"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "HDSRInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "HDSRInstance"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance": "HDRInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "HDRInstance"
+          },
+          "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SkinInstance"
+          }
+        },
+        {
+          "SrcPort": {
+            "PortId": 0,
+            "NodeInstance": "SkinInstance"
+          },
+          "DstPort": {
+            "PortId": 0,
+            "NodeInstance":"SinkBuffer"
+          }
+        }
+      ]
+    }
+  }
